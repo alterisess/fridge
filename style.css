@@ -41,8 +41,8 @@ hr {
 }
 
 .logo {
-  width: 200px;
-  height: 64px;
+  width: 160px;
+  height: 52px;
   padding: 10px;
 }
 
@@ -57,12 +57,12 @@ td.accent {
 
 /* Container holding the icons */
 .icon-grid {
-  padding-top: 16px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, auto); /* 4 icons per row */
   gap: 24px; /* 24px spacing between icons (both row and column) */
   align-items: center; /* vertically center icons */
-  justify-content: start; /* align grid to the left; use center if preferred */
+  justify-content: center; /* align grid to the left; use center if preferred */
 }
 
 /* Each icon (could be <img>, <svg>, or a wrapper element) */
