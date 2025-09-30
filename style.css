@@ -42,9 +42,36 @@ hr {
 
 td.accent {
   font-size: 16px;        /* slightly larger */
-  color: #2563eb;         /* blue text */
-  font-weight: 600;       /* semi-bold for emphasis */
+  color: #1f2937;         /* blue text */
+  font-weight: 400;       /* semi-bold for emphasis */
 }
+
+/* Container holding the icons */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* 4 icons per row */
+  gap: 24px; /* 24px spacing between icons (both row and column) */
+  align-items: center; /* vertically center icons */
+  justify-content: start; /* align grid to the left; use center if preferred */
+}
+
+/* Each icon (could be <img>, <svg>, or a wrapper element) */
+.icon-grid .icon {
+  width: 24px;   /* adjust size as needed */
+  height: 24px;  /* maintain consistent square size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: ensure images/SVGs fit within the icon box */
+.icon-grid .icon img,
+.icon-grid .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 @media (max-width: 600px) {
   .wrapper {
@@ -53,7 +80,7 @@ td.accent {
   }
   table {
     font-family: helvetica;
-    font-size: 11px;
+    font-size: 12px;
     width: 600px;
   }
 }
