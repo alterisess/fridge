@@ -84,14 +84,10 @@ td.accent {
 }
 
   .bottom-center-overlay {
-    position: absolute;
-    bottom: 0;                 /* stick to the bottom edge */
-    transform: translateX(-50%); /* center horizontally */
-    max-width: 400px;
-    height: auto;
-    /* Optional: lift it above the border or add spacing */
-    margin-bottom: -1px; /* adjust if table has border thickness */
-    pointer-events: none; /* prevent blocking clicks on the table, if needed */
+  bottom: 0;                 /* stick to the bottom edge */
+  transform: translateX(-50%); /* center horizontally */
+  align-items: center; /* vertically center icons */
+  justify-content: center; /* align grid to the left; use center if preferred */
 
 @media (max-width: 600px) {
   .wrapper {
