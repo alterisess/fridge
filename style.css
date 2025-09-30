@@ -40,14 +40,24 @@ hr {
   padding: 10px;
 }
 
+.logo {
+  width: 200px;
+  height: 64px;
+  padding: 10px;
+}
+
+
+
 td.accent {
-  font-size: 16px;        /* slightly larger */
-  color: #1f2937;         /* blue text */
+  padding-top: -4px;
+  font-size: 15px;        /* slightly larger */
+  color: #6b7280;         /* grey text */
   font-weight: 400;       /* semi-bold for emphasis */
 }
 
 /* Container holding the icons */
 .icon-grid {
+  padding-top: 16px;
   display: grid;
   grid-template-columns: repeat(4, auto); /* 4 icons per row */
   gap: 24px; /* 24px spacing between icons (both row and column) */
