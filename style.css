@@ -17,11 +17,11 @@ hr {
 }
 
 #contact-start {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 #contact-end {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .image {
@@ -31,7 +31,10 @@ hr {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;         /* wrap children if needed */
+  gap: 4px;               /* space between children */
+  align-items: center;     /* vertical alignment (cross-axis) */
+  justify-content: space-between; /* main-axis alignment */
 }
 
 .image-container {
@@ -42,8 +45,7 @@ hr {
 
 .logo {
   width: 160px;
-  height: 52px;
-  padding: 10px;
+  height: 24px;
 }
 
 
@@ -81,7 +83,15 @@ td.accent {
   height: 100%;
 }
 
-
+  .bottom-center-overlay {
+    position: absolute;
+    bottom: 0;                 /* stick to the bottom edge */
+    transform: translateX(-50%); /* center horizontally */
+    max-width: 400px;
+    height: auto;
+    /* Optional: lift it above the border or add spacing */
+    margin-bottom: -1px; /* adjust if table has border thickness */
+    pointer-events: none; /* prevent blocking clicks on the table, if needed */
 
 @media (max-width: 600px) {
   .wrapper {
