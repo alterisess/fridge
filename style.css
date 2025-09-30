@@ -40,6 +40,12 @@ hr {
   padding: 10px;
 }
 
+td.accent {
+  font-size: 16px;        /* slightly larger */
+  color: #2563eb;         /* blue text */
+  font-weight: 600;       /* semi-bold for emphasis */
+}
+
 @media (max-width: 600px) {
   .wrapper {
     display: flex;
